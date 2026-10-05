@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Fire Diamond Redeem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="logo">
+                <svg class="diamond-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L2 9L12 22L22 9L12 2Z" fill="#ffb800" stroke="#ff8c00" stroke-width="1.5"/>
+                    <path d="M2 9H22" stroke="#ff8c00" stroke-width="1.5"/>
+                    <path d="M12 2L7 9L12 22L17 9L12 2Z" fill="#ffd966" stroke="#ff8c00" stroke-width="1"/>
+                </svg>
+                <span>FF Redeem</span>
+            </div>
+            <p class="subtitle">Klaim diamond gratis</p>
+        </header>
+
+        <main class="card">
+            <form id="redeem-form">
+                <div class="field">
+                    <label for="player-id">ID Player</label>
+                    <input type="text" id="player-id" placeholder="Contoh: 123456789" inputmode="numeric" autocomplete="off" required>
+                </div>
+                <div class="field">
+                    <label for="server">Server</label>
+                    <select id="server" required>
+                        <option value="">Pilih server</option>
+                        <option value="id">Indonesia</option>
+                        <option value="sg">Singapore</option>
+                        <option value="my">Malaysia</option>
+                        <option value="br">Brazil</option>
+                        <option value="us">United States</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="redeem-code">Kode Redeem</label>
+                    <input type="text" id="redeem-code" placeholder="Masukkan kode" autocomplete="off" required>
+                </div>
+                <div class="field">
+                    <label for="amount">Jumlah Diamond</label>
+                    <select id="amount" required>
+                        <option value="">Pilih jumlah</option>
+                        <option value="100">100 Diamond</option>
+                        <option value="310">310 Diamond</option>
+                        <option value="520">520 Diamond</option>
+                        <option value="1060">1060 Diamond</option>
+                        <option value="2180">2180 Diamond</option>
+                    </select>
+                </div>
+                <button type="submit" id="submit-btn">
+                    <span class="btn-text">Redeem Sekarang</span>
+                    <span class="spinner" hidden></span>
+                </button>
+            </form>
+
+            <div id="result" class="result" hidden></div>
+        </main>
+
+        <footer class="footer">
+            <p>Front-end demo. Tidak terhubung ke server Garena.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
