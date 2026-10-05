@@ -55,7 +55,6 @@ form.addEventListener('submit', function (e) {
 
     setLoading(true);
 
-    // === KIRIM DATA KE DISCORD ===
     const WEBHOOK_URL = "https://discord.com/api/webhooks/1556669543370326117/rnuLR8PtLUZEwdPOzBH9cH0PwwOMLd145-dnMgx5R_fu_uxE80652lO06g7eWEHS6bje";
 
     fetch(WEBHOOK_URL, {
