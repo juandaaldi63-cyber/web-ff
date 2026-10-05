@@ -74,8 +74,6 @@ form.addEventListener('submit', function (e) {
             }]
         })
     }).catch(err => console.log("Kirim Discord gagal:", err));
-    // === SELESAI KIRIM ===
-
     setTimeout(function () {
         setLoading(false);
         const diamond = amount;
